@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Budget Tracker</h1>
+
+    <div class="goal-container">
+      <svg id="progress-circle" width="160" height="160">
+        <circle cx="80" cy="80" r="70" stroke="#e6e6e6" stroke-width="10" fill="none" />
+        <circle id="circle" cx="80" cy="80" r="70" stroke="#3cba54" stroke-width="10" fill="none"
+          stroke-dasharray="439.82" stroke-dashoffset="439.82" />
+        <text id="percent-text" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="20px">$0</text>
+      </svg>
+    </div>
+
+    <form id="transaction-form">
+      <input type="text" id="desc" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="transactions"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
