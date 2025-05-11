@@ -8,15 +8,20 @@
 </head>
 <body>
   <div class="container">
-    <h1>💰 Budget Tracker</h1>
+    <h1>🏦 Savings</h1>
 
     <div class="goal-container">
       <svg id="progress-circle" width="160" height="160">
-        <circle cx="80" cy="80" r="70" stroke="#e6e6e6" stroke-width="10" fill="none" />
-        <circle id="circle" cx="80" cy="80" r="70" stroke="#3cba54" stroke-width="10" fill="none"
+        <circle cx="80" cy="80" r="70" stroke="#333" stroke-width="10" fill="none" />
+        <circle id="circle" cx="80" cy="80" r="70" stroke="#00c805" stroke-width="10" fill="none"
           stroke-dasharray="439.82" stroke-dashoffset="439.82" />
         <text id="percent-text" x="50%" y="50%" text-anchor="middle" dy=".3em" font-size="20px">$0</text>
       </svg>
+    </div>
+
+    <div style="display: flex; gap: 10px; margin-bottom: 20px; justify-content: center;">
+      <button style="flex: 1;">Transfer In</button>
+      <button style="flex: 1; background-color: #444;">Transfer Out</button>
     </div>
 
     <form id="transaction-form">
